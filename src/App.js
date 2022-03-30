@@ -1,23 +1,19 @@
+import { Route, Routes } from 'react-router-dom';
+
+import { FinishPage, MainPage, NamePage, TimeSlots } from './pages';
+import { PageWrapper } from './components';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path='/' element={<PageWrapper />}>
+        <Route path='/' element={<MainPage />} />
+        <Route path='/time-slots' element={<TimeSlots />} />
+        <Route path='/generate' element={<NamePage />} />
+        <Route path='/finish' element={<FinishPage />} />
+      </Route>
+    </Routes>
   );
 }
 

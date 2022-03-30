@@ -1,0 +1,114 @@
+.header {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.header img {
+  width: 28px;
+  height: 28px;
+  object-fit: scale-down;
+}
+
+.header div {
+  width: 28px;
+  height: 28px;
+}
+
+.list-day {
+  margin-top: 25px;
+}
+
+.day {
+  border-radius: 8px;
+  border: 1px solid #ebebeb;
+  background-color: #ebebeb;
+  width: 40px;
+  height: 66px;
+  margin-right: 8px;
+}
+
+.active {
+  border: 1px solid #FF6F42;
+  background-color: #FF6F42;
+}
+
+.active .week-day {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.active .date {
+  color: #fff;
+  font-weight: 500;
+}
+
+.week-day {
+  color: #AEAEB2;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.date {
+  color: #040404;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.time-slots {
+  display: flex;
+  justify-content: center;
+  margin: 2px 0 1px;
+}
+
+.time-slots .time-slot {
+  border-radius: 4px;
+  background-color: #040404;
+  width: 4px;
+  height: 4px;
+  margin: 1px;
+}
+
+.card-slots {
+  margin-top: 30px;
+}
+
+.card-slots .card {
+  border-radius: 8px;
+  background-color: #ebebeb;
+  height: 56px;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+  margin-bottom: 8px;
+}
+
+.card-slots .card input {
+  width: 20px;
+  height: 20px;
+}
+
+.next {
+  border-radius: 50px;
+  border: 1px solid #040404;
+  background-color: #040404;
+  width: 100%;
+  height: 50px;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 12px;
+}

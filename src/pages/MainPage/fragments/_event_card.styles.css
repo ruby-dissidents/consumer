@@ -1,0 +1,26 @@
+.d_mp_event_card {
+    border-radius: 12px;
+    background-color: #836AC6;
+    width: 32%;
+    height: 176px;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.d_mp_event_card_title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 12px;
+}
+
+.d_mp_event_card_date {
+    font-weight: 500;
+    font-size: 17px;
+}

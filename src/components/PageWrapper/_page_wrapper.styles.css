@@ -1,14 +1,19 @@
-.container {
-  max-width: 375px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding: 0 16px;
-  margin: 0 auto;
+.d_container {
+    background-color: #040404;
+    height: 100vh;
 }
 
-@media (max-width: 375px) {
-  .container {
-    max-width: 100%;
-  }
+.d_pw_navbar {
+    color: #fff;
+    padding: 12px 32px;
+    display: flex;
+    vertical-align: center;
+    justify-content: space-between;
+}
+
+.d_outlet {
+    border-radius: 32px 32px 0 0;
+    background-color: #fff;
+    height: calc(100vh - 87px);
+    padding: 40px 32px 0 40px;
 }

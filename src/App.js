@@ -1,17 +1,32 @@
-import { Route, Routes } from 'react-router-dom';
+import {Route, Routes} from "react-router-dom";
 
-import { FinishPage, MainPage, NamePage, TimeSlots } from './pages';
-import { PageWrapper } from './components';
-import './App.css';
+import {FinishPage, FinishPageMob, MainPage, MainPageMob, MarkingPage, NamePageMob, TimeSlotsMob} from "./pages";
+import {PageWrapper, PageWrapperMob} from "./components";
+
+import "./App.css";
 
 function App() {
+  const clientWidth = document.documentElement.clientWidth
+
+  if (clientWidth > 768) {
+    return (
+      <Routes>
+        <Route path="/" element={<PageWrapper/>}>
+          <Route path="/" element={<MainPage/>}/>
+          <Route path="/marking" element={<MarkingPage/>}/>
+          <Route path="/finish-marking" element={<FinishPage/>}/>
+        </Route>
+      </Routes>
+    )
+  }
+
   return (
     <Routes>
-      <Route path='/' element={<PageWrapper />}>
-        <Route path='/' element={<MainPage />} />
-        <Route path='/time-slots' element={<TimeSlots />} />
-        <Route path='/generate' element={<NamePage />} />
-        <Route path='/finish' element={<FinishPage />} />
+      <Route path="/" element={<PageWrapperMob/>}>
+        <Route path="/" element={<MainPageMob/>}/>
+        <Route path="/time-slots" element={<TimeSlotsMob/>}/>
+        <Route path="/generate" element={<NamePageMob/>}/>
+        <Route path="/finish" element={<FinishPageMob/>}/>
       </Route>
     </Routes>
   );

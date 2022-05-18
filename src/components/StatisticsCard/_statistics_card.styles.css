@@ -1,0 +1,46 @@
+.d_map_statistics {
+    background-color: #F6F6F6;
+    border-radius: 24px;
+    width: 32%;
+    height: calc(100% - 100px);
+    padding: 32px;
+}
+
+.d_map_statistics_title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+    color: #040404;
+    margin-bottom: 20px;
+}
+
+.d_map_statistics_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.d_map_statistics_list_item {
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    height: 24px;
+    min-width: 38%;
+    padding: 16px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.d_map_statistics_list_item_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #040404;
+}
+
+.d_map_statistics_list_item_friends {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #767676;
+}

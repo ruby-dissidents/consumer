@@ -1,6 +1,15 @@
 import {Route, Routes} from "react-router-dom";
 
-import {FinishPage, FinishPageMob, MainPage, MainPageMob, MarkingPage, NamePageMob, TimeSlotsMob} from "./pages";
+import {
+  FinishPage,
+  FinishPageMob,
+  MainPage,
+  MainPageMob,
+  MarkingPage,
+  NamePageMob,
+  TimeSlots,
+  TimeSlotsMob
+} from "./pages";
 import {PageWrapper, PageWrapperMob} from "./components";
 
 import "./App.css";
@@ -15,6 +24,7 @@ function App() {
           <Route path="/" element={<MainPage/>}/>
           <Route path="/marking" element={<MarkingPage/>}/>
           <Route path="/finish-marking" element={<FinishPage/>}/>
+          <Route path="/time-slots" element={<TimeSlots/>}/>
         </Route>
       </Routes>
     )

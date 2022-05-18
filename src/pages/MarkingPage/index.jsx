@@ -12,7 +12,7 @@ const MarkingPage = () => (
       description="Катя Зырянова приглашает тебя на встречу «Марафон Гарри Поттера»"
       color="#FF6F42"
     >
-      <Link to="/" className="d_map_marking_card_link">Отметиться</Link>
+      <Link to="/time-slots" className="d_map_marking_card_link">Отметиться</Link>
     </MarkingCard>
     <StatisticsCard statistics={statistics}/>
   </div>

@@ -2,7 +2,6 @@ import React from "react";
 
 import {MarkingCard, StatisticsCard} from "../../components"
 import {statistics} from "./_constants"
-import {Link} from "react-router-dom";
 import iconFinish from "../../assets/images/icon-finish.svg";
 
 const FinisPage = () => (

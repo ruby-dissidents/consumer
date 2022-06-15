@@ -1,0 +1,21 @@
+.d_button {
+    border-width: 0;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #040404;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.d_button img {
+    margin-left: 4px;
+}
+
+.d_button_link {
+    color: #fff;
+    background-color: transparent;
+    padding: 0;
+}

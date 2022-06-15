@@ -1,15 +1,24 @@
-.d_container {
+.d_container_fluid {
   background-color: #040404;
   height: 100vh;
 }
 
 .d_pw_navbar {
   color: #fff;
-  padding: 12px 32px;
+  padding: 12px 0 16px;
   display: flex;
   vertical-align: center;
   justify-content: space-between;
 }
+
+.d_pw_navbar_button {
+  padding: 3px 4px 3px 12px;
+}
+
+.d_pw_navbar_link_button {
+  margin-right: 40px;
+}
+
 
 .d_pw_navbar_title {
   font-weight: 600;

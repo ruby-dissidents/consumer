@@ -1,12 +1,12 @@
 .d_mp_tile {
-    font-weight: 700;
-    font-size: 23px;
-    line-height: 26px;
-    margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 26px;
+  margin-bottom: 16px;
 }
 
 .d_mp_upcoming {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

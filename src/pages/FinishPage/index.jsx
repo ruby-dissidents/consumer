@@ -1,11 +1,18 @@
-import React from "react";
+import React from "react"
 
-import {MarkingCard, StatisticsCard} from "../../components"
-import {statistics} from "./_constants"
-import iconFinish from "../../assets/images/icon-finish.svg";
+import { MarkingCard, StatisticsCard } from "../../components"
+import { statistics } from "./_constants"
+import iconFinish from "../../assets/images/icon-finish.svg"
 
 const FinisPage = () => (
-  <div style={{height: "100%", display: "flex", justifyContent: "space-between", flexDirection: "row"}}>
+  <div
+    style={{
+      height: "100%",
+      display: "flex",
+      justifyContent: "space-between",
+      flexDirection: "row",
+    }}
+  >
     <MarkingCard
       author="Катя Зырянова"
       title="«Марафон Гарри Поттера»"
@@ -17,11 +24,11 @@ const FinisPage = () => (
         alt="ok"
         width={235}
         height={235}
-        style={{margin: "auto"}}
+        style={{ margin: "auto" }}
       />
     </MarkingCard>
-    <StatisticsCard statistics={statistics}/>
+    <StatisticsCard statistics={statistics} />
   </div>
-);
+)
 
-export default FinisPage;
+export default FinisPage

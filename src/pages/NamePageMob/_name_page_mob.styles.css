@@ -20,11 +20,11 @@ input {
 }
 
 input:focus {
-  border: 1px solid #FF6F42;
+  border: 1px solid #ff6f42;
 }
 
 .input-description {
-  color: #F9F9F9;
+  color: #f9f9f9;
   font-weight: 400;
   font-size: 12px;
   line-height: 13px;
@@ -33,8 +33,8 @@ input:focus {
 
 .next-asd {
   border-radius: 50px;
-  border: 1px solid #FF6F42;
-  background-color: #FF6F42;
+  border: 1px solid #ff6f42;
+  background-color: #ff6f42;
   width: 100%;
   height: 50px;
   color: #ffffff;

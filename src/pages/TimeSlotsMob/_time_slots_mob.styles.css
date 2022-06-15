@@ -33,8 +33,8 @@
 }
 
 .active {
-  border: 1px solid #FF6F42;
-  background-color: #FF6F42;
+  border: 1px solid #ff6f42;
+  background-color: #ff6f42;
 }
 
 .active .week-day {
@@ -47,7 +47,7 @@
 }
 
 .week-day {
-  color: #AEAEB2;
+  color: #aeaeb2;
   font-weight: 600;
   font-size: 13px;
   line-height: 18px;

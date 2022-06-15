@@ -1,31 +1,46 @@
 .d_container {
-    background-color: #040404;
-    height: 100vh;
+  background-color: #040404;
+  height: 100vh;
 }
 
 .d_pw_navbar {
-    color: #fff;
-    padding: 12px 32px;
-    display: flex;
-    vertical-align: center;
-    justify-content: space-between;
+  color: #fff;
+  padding: 12px 32px;
+  display: flex;
+  vertical-align: center;
+  justify-content: space-between;
 }
 
 .d_pw_navbar_title {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 20px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .d_pw_navbar_description {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 34px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
 }
 
 .d_outlet {
-    border-radius: 32px 32px 0 0;
-    background-color: #fff;
-    height: calc(100vh - 87px);
-    padding: 40px 32px 0 40px;
+  border-radius: 32px 32px 0 0;
+  background-color: #fff;
+  height: calc(100vh - 87px);
+  padding: 40px 32px 0 40px;
+}
+
+.d_pw_navbar_link {
+  border-radius: 50px;
+  background-color: #fff;
+  width: 190px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #040404;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  text-decoration: none;
 }

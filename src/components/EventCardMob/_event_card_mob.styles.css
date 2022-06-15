@@ -1,6 +1,6 @@
 .event-card {
   border-radius: 16px;
-  background-color: #FF6F42;
+  background-color: #ff6f42;
   height: 548px;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@
 
 .organizer .letters {
   border-radius: 40px;
-  background-color: #9ACF30;
+  background-color: #9acf30;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;

@@ -14,6 +14,8 @@
 }
 
 .d_mp_event_card_title {
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
@@ -21,6 +23,9 @@
 }
 
 .d_mp_event_card_date {
+  font-family: 'SF Pro Display Medium', sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 17px;
+  line-height: 100%;
 }

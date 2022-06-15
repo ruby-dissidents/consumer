@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes, Navigate } from "react-router-dom"
 
 import {
   FinishPage,
@@ -21,10 +21,11 @@ function App() {
     return (
       <Routes>
         <Route path="/" element={<PageWrapper />}>
-          <Route path="/" element={<MainPage />} />
+          <Route index element={<Navigate to="/home" replace />} />
+          <Route path="/home" element={<MainPage />} />
           <Route path="/marking" element={<MarkingPage />} />
-          <Route path="/finish-marking" element={<FinishPage />} />
           <Route path="/time-slots" element={<TimeSlots />} />
+          <Route path="/finish-marking" element={<FinishPage />} />
         </Route>
       </Routes>
     )

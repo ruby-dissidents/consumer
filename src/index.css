@@ -130,6 +130,16 @@ table {
 }
 
 @font-face {
+  font-family: SF Pro Text Semibold;
+  src: url(assets/fonts/SF-Pro-Display-Semibold.ttf);
+}
+
+@font-face {
+  font-family: SF Pro Text Regular;
+  src: url(assets/fonts/SF-Pro-Text-Regular.ttf);
+}
+
+@font-face {
   font-family: SF Pro Display;
   src: url(assets/fonts/SF-Pro-Display-Bold.ttf);
 }
@@ -137,6 +147,15 @@ table {
 @font-face {
   font-family: SF Pro Display Medium;
   src: url(assets/fonts/SF-Pro-Display-Medium.ttf);
+}
+
+@font-face {
+  font-family: SF Pro Display Semibold;
+  src: url(assets/fonts/SF-Pro-Display-Semibold.ttf);
+}
+
+.scroll {
+  display: flex;
 }
 
 code {
@@ -153,4 +172,8 @@ body {
 
 button {
   font-family: "SF Pro Text", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }

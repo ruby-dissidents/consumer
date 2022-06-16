@@ -1,3 +1,4 @@
+export { default as EventPage } from "./EventPage"
 export { default as MainPage } from "./MainPage"
 export { default as MarkingPage } from "./MarkingPage"
 export { default as MainPageMob } from "./MainPageMob"

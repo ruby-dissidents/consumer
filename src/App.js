@@ -1,6 +1,7 @@
 import { Route, Routes, Navigate } from "react-router-dom"
 
 import {
+  EventPage,
   FinishPage,
   FinishPageMob,
   MainPage,
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<PageWrapper />}>
           <Route index element={<Navigate to="/home" replace />} />
           <Route path="/home" element={<MainPage />} />
+          <Route path="/event-page/:id" element={<EventPage />} />
           <Route path="/marking" element={<MarkingPage />} />
           <Route path="/time-slots" element={<TimeSlots />} />
           <Route path="/finish-marking" element={<FinishPage />} />

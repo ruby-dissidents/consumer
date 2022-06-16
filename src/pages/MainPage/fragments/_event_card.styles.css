@@ -1,16 +1,23 @@
 .d_mp_event_card {
   border-radius: 12px;
   background-color: #836ac6;
-  width: 32%;
-  height: 176px;
+  width: 33%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.d_mp_event_card:last-child {
+  margin-right: 0;
+}
+
+.d_mp_event_card a {
   color: #fff;
+  height: 176px;
   display: flex;
   cursor: pointer;
   flex-direction: column;
   justify-content: flex-end;
   padding: 20px;
-  margin-right: 10px;
-  margin-bottom: 10px;
 }
 
 .d_mp_event_card_title {

@@ -1,0 +1,15 @@
+.d_ev_container {
+    width: 1027px;
+    margin: 0 auto;
+    padding-bottom: 111px;
+}
+
+.d_ev_title {
+    text-align: center;
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 30px;
+}

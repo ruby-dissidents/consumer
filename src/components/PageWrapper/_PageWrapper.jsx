@@ -13,7 +13,9 @@ export const PageWrapper = () => {
     <div className="d_container_fluid">
       <div className="d_container">{currentNavBar}</div>
       <div className="d_outlet" style={{ height: `calc(${outletHeight})` }}>
-        <Outlet />
+        <div className="d_container">
+          <Outlet />
+        </div>
       </div>
     </div>
   )

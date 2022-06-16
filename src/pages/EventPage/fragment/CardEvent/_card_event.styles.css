@@ -1,0 +1,96 @@
+.d_ce {
+    border-radius: 16px;
+    background: #F6F6F6;
+    width: 329px;
+    height: 537px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+    padding: 16px 20px 20px;
+}
+
+.d_ce:last-child {
+    margin-right: 0;
+}
+
+.free {
+    background-color: #FF6F42;
+}
+
+.free .d_ce_title,
+.free .d_ce_proposal {
+    color: #FFFFFF;
+}
+
+.d_ce_title {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 100%;
+    color: #040404;
+}
+
+.d_ce_participants {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.d_ce_participants_title {
+    font-family: 'SF Pro Text', sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 22px;
+    color: #040404;
+    margin-bottom: 12px;
+}
+
+.d_ce_scroll {
+    display: flex;
+}
+
+.d_ce_participant {
+    border-radius: 20px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    padding: 6px 12px 6px 6px;
+}
+
+.d_ce_participant:last-child {
+    margin-right: 0;
+}
+
+.d_ce_participant_avatar {
+    background: #9ACF30;
+    border-radius: 14px;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    align-items: center;
+    font-family: 'SF Pro Text', sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.d_ce_participant_title {
+    font-family: 'SF Pro Text Semibold', sans-serif;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.d_ce_proposal {
+    font-family: 'SF Pro Text Regular', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #767676;
+}

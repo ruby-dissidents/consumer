@@ -1,7 +1,7 @@
 import React from "react"
 
 import { events } from "./_constants"
-import { CardEvent, Statistics } from "./fragment"
+import { ButtonEvent, CardEvent, Statistics } from "./fragment"
 import "./_event_page.styles.css"
 
 const EventPage = () => (
@@ -13,6 +13,7 @@ const EventPage = () => (
       })}
     </div>
     <Statistics />
+    <ButtonEvent />
   </div>
 )
 

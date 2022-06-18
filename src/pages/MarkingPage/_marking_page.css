@@ -1,0 +1,10 @@
+.mp_stack {
+    display: flex;
+    align-items: flex-start;
+}
+
+.d_mp_container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}

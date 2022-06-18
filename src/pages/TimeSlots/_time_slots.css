@@ -1,0 +1,4 @@
+.d_ts_wrapper_time_slots {
+    height: calc(100% - 30px);
+    display: flex;
+}

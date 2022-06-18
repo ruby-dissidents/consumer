@@ -2,18 +2,12 @@ import React from "react"
 
 import { TimeSlot } from "./fragments"
 import { timeSlots } from "./_constants"
+import "./_time_slots.css"
 
 const TimeSlots = () => (
-  <div
-    style={{ height: "calc(100% - 30px)", display: "flex", overflow: "hidden" }}
-  >
+  <div className="d_ts_wrapper_time_slots">
     {timeSlots.map(({ date, title, timeSlotsList }) => (
-      <TimeSlot
-        date={date}
-        title={title}
-        timeSlotsList={timeSlotsList}
-        key={date}
-      />
+      <TimeSlot date={date} title={title} timeSlotsList={timeSlotsList} key={date} />
     ))}
   </div>
 )

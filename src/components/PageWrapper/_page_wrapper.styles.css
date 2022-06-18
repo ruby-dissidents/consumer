@@ -35,7 +35,6 @@
 .d_outlet {
   border-radius: 32px 32px 0 0;
   background-color: #fff;
-  height: calc(100vh - 87px);
   padding: 40px 32px 0 40px;
 }
 
@@ -45,6 +44,7 @@
   width: 190px;
   height: 54px;
   display: flex;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   color: #040404;
@@ -52,4 +52,74 @@
   font-size: 17px;
   line-height: 22px;
   text-decoration: none;
+}
+
+.d_pw_modal {
+  background-color: #FFFFFF;
+  border-radius: 24px;
+  width: 600px;
+  height: 400px;
+  position: relative;
+}
+
+.d_pw_modal_title {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 41px;
+  color: #040404;
+  margin: 77px 0 40px;
+}
+
+.d_pw_modal_input {
+  border-radius: 100px;
+  border: 2px solid #FF6F42;
+  width: 84%;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.d_pw_modal_input::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #767676;
+}
+
+.d_pw_modal_input:focus,
+.d_pw_modal_input:active  {
+  border: 2px solid #FF6F42;
+}
+
+.d_pw_modal_input_label {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  color: #767676;
+  margin-left: 36px;
+}
+
+.d_pw_modal_button {
+  border-radius: 100px;
+  border-width: 0;
+  background: #FF6F42;
+  width: 92%;
+  height: 54px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 24px 24px;
 }

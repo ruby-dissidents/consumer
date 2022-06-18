@@ -1,11 +1,9 @@
-import { Fragment } from "react"
-
 import { EventCard } from "./fragments/indext"
 import { eventCards, eventCardsOld } from "./_constants"
 import "./_main_page.styles.css"
 
 const MainPage = () => (
-  <Fragment>
+  <div className="d_container">
     <div className="d_mp_tile">Грядущие</div>
     <div className="d_mp_upcoming">
       {eventCards.map(({ color, title, data, link }) => (
@@ -19,7 +17,7 @@ const MainPage = () => (
         <EventCard title={title} data={data} color={color} key={title} />
       ))}
     </div>
-  </Fragment>
+  </div>
 )
 
 export default MainPage

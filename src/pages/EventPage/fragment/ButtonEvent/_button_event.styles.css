@@ -37,4 +37,11 @@
     font-size: 22px;
     line-height: 28px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d_ep_button_participants img {
+    margin-right: 6px;
 }

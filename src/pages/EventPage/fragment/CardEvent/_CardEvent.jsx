@@ -2,14 +2,14 @@ import React from "react"
 
 import "./_card_event.styles.css"
 
-export const CardEvent = ({ title, active = false }) => {
+export const CardEvent = ({ title, active = false, setIsOpenModalInvite }) => {
   const classNameParticipants = active ? "d_ce free" : "d_ce"
   const messageProposal = active
     ? "Этот слот свободен у всех 14 участников. Мы все проверили!"
     : "Напиши им: возможно, они смогут перенести дела и подстроиться"
 
   return (
-    <div className={classNameParticipants}>
+    <div className={classNameParticipants} onClick={setIsOpenModalInvite}>
       <div className="d_ce_title">{title}</div>
       <div>
         {!active && (

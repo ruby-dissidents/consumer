@@ -2,8 +2,8 @@ import React from "react"
 
 import "./_statistics.styles.css"
 
-export const Statistics = () => (
-  <div className="d_s_statistics">
+export const Statistics = ({ setIsOpenModalInvite }) => (
+  <div className="d_s_statistics" onClick={setIsOpenModalInvite}>
     <div className="d_s_statistics_title">Статистика по дням</div>
     <div className="d_s_statistics_scroll scroll">
       <div className="d_s_statistics_column">

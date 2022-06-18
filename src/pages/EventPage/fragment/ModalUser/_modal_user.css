@@ -1,0 +1,92 @@
+.d_ep_overlay {
+    background-color: hsl(0deg 0% 0% / 50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding-top: 90px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.d_ep_stack {
+    display: flex;
+}
+
+.d_ep_modal_user {
+    border-radius: 16px;
+    background: #FFFFFF;
+    width: 420px;
+    /*height: 671px;*/
+    padding: 16px 32px 32px;
+    z-index: 1001;
+    position: relative;
+    overflow: hidden;
+}
+
+.d_ep_modal_user_title {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 8px;
+}
+
+.d_ep_modal_user_button_delete {
+    border-width: 0;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 35px;
+    top: 20px;
+}
+
+.d_ep_users {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.d_ep_users_title {
+    font-family: 'SF Pro Text', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.d_ep_invite_user_lists {
+    display: flex;
+    flex-direction: column;
+}
+
+.d_ep_invite_user {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.d_ep_invite_user_avatar {
+    background-color: #9ACF30;
+    border-radius: 100px;
+    width: 56px;
+    height: 56px;
+    margin-right: 12px;
+}
+
+.d_ep_invite_user_text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+}

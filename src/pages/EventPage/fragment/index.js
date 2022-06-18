@@ -1,3 +1,5 @@
 export * from "./ButtonEvent"
 export * from "./CardEvent"
+export * from "./ModalInvite"
+export * from "./ModalUser"
 export * from "./Statistics"

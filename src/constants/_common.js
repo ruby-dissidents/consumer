@@ -1,14 +1,16 @@
 const colors = [
-  "#42ff9a",
-  "#2B2B2B",
-  "#bac66a",
   "#9ACF30",
-  "#fbca61",
-  "#AAFF42FF",
-  "#42FF9AFF",
-  "#C66A6AFF",
-  "#BAC66AFF",
-  "#71e75f",
+  "#FFC95C",
+  "#5E9DEF",
+  "#FF9770",
+  "#A894D6",
+  "#E56271",
+  "#4DA65F",
+  "#F7C844",
+  "#C3BBFA",
+  "#EF8A7B",
+  "#5257F6",
+  "#9761F6",
 ]
 
 export function getRandomColor() {

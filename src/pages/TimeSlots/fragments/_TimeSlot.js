@@ -22,9 +22,7 @@ export const TimeSlot = ({ title, date, timeSlotsList, id }) => {
     <div className="d_ts_time_slots" onClick={(event) => eventIsOpenSlot(event)} ref={timeSlotRef} id={id}>
       <div className="d_ts_time_slots_title">{title}</div>
       <div className="d_ts_time_slots_date">{date}</div>
-      <div className="range">
-        <TimeRange />
-      </div>
+      <TimeRange />
     </div>
   )
 }

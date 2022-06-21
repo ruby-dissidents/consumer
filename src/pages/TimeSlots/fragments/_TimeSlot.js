@@ -8,8 +8,7 @@ const activeClass = "d_ts_time_slots_active"
 export const TimeSlot = ({ title, date, timeSlotsList, id }) => {
   const timeSlotRef = useRef(null)
 
-  function eventIsOpenSlot(event) {
-    event.stopPropagation()
+  function eventIsOpenSlot() {
     const timeSlot = timeSlotRef.current
 
     if (timeSlot.classList.length === 1) {
@@ -25,17 +24,7 @@ export const TimeSlot = ({ title, date, timeSlotsList, id }) => {
       <div className="d_ts_time_slots_date">{date}</div>
       <div className="range">
         <TimeRange />
-        <button className="d_ts_button" children="Могу весь день" />
       </div>
-      {typeof timeSlotsList !== "undefined" && (
-        <div className="d_ts_time_slots_list">
-          {timeSlotsList.map((date) => (
-            <div className="d_ts_time_slots_list_item" key={date}>
-              {date}
-            </div>
-          ))}
-        </div>
-      )}
     </div>
   )
 }

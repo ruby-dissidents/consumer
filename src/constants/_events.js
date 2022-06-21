@@ -94,7 +94,7 @@ export const eventMdSW = [
     title: "Марафон по star wars",
     events: [
       {
-        title: "Все могут \n 22 июн, ср 19:00-22:00",
+        title: "Все могут \n 22 июн, ср 19:00-23:00",
         active: true,
         number: 6,
       },
@@ -113,14 +113,26 @@ export const eventMdSW = [
       {
         fullDate: "22 июня, среда",
         users: usersEvent0,
+        result: {
+          start: "19:00",
+          stop: "23:00",
+        },
       },
       {
         fullDate: "23 июня, четверг",
         users: usersEvent1,
+        result: {
+          start: "19:00",
+          stop: "23:00",
+        },
       },
       {
         fullDate: "24 июня, пятница",
         users: usersEvent2,
+        result: {
+          start: "20:00",
+          stop: "21:00",
+        },
       },
     ],
     statistics: [...statistics],

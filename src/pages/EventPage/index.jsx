@@ -15,43 +15,43 @@ const EventPage = () => {
   const eventStatisticsEvent = event.statisticsEvent[numberStatistic]
 
   return (
-    <Preloader>
-      <Fragment>
-        <div className="d_ev_container">
-          <div className="d_ev_title">{event.title}</div>
-          <div className="d_ce_stack">
-            {event.events.map(({ title, active, number, users }, index) => (
-              <CardEvent
-                title={title}
-                setIsOpenModalInvite={() => {
-                  setNumberStatistic(index)
-                  setIsOpenModalInvite((prevState) => !prevState)
-                }}
-                active={active}
-                number={number}
-                users={users}
-                key={title}
-              />
-            ))}
-          </div>
-          <Statistics statistics={event.statistics} />
-          <ButtonEvent
-            setIsOpenModalUsers={() => setIsOpenModalUsers((prevState) => !prevState)}
-            numberUsers={eventStatisticsEvent.users.length}
-          />
+    // <Preloader>
+    <Fragment>
+      <div className="d_ev_container">
+        <div className="d_ev_title">{event.title}</div>
+        <div className="d_ce_stack">
+          {event.events.map(({ title, active, number, users }, index) => (
+            <CardEvent
+              title={title}
+              setIsOpenModalInvite={() => {
+                setNumberStatistic(index)
+                setIsOpenModalInvite((prevState) => !prevState)
+              }}
+              active={active}
+              number={number}
+              users={users}
+              key={title}
+            />
+          ))}
         </div>
-        <ModalInvite
-          isOpen={isOpenModalInvite}
-          setIsOpenModalInvite={() => setIsOpenModalInvite((prevState) => !prevState)}
-          statistics={eventStatisticsEvent}
-        />
-        <ModalUser
-          isOpen={isOpenModalUsers}
+        <Statistics statistics={event.statistics} />
+        <ButtonEvent
           setIsOpenModalUsers={() => setIsOpenModalUsers((prevState) => !prevState)}
-          participants={eventStatisticsEvent.users}
+          numberUsers={eventStatisticsEvent.users.length}
         />
-      </Fragment>
-    </Preloader>
+      </div>
+      <ModalInvite
+        isOpen={isOpenModalInvite}
+        setIsOpenModalInvite={() => setIsOpenModalInvite((prevState) => !prevState)}
+        statistics={eventStatisticsEvent}
+      />
+      <ModalUser
+        isOpen={isOpenModalUsers}
+        setIsOpenModalUsers={() => setIsOpenModalUsers((prevState) => !prevState)}
+        participants={eventStatisticsEvent.users}
+      />
+    </Fragment>
+    // {/*</Preloader>*/}
   )
 }
 

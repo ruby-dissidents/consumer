@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Fragment } from "react"
 
 import IconClose from "../../../../assets/images/icon-close.svg"
 import { statisticsTimes } from "./_constants"
@@ -49,15 +49,24 @@ export const ModalInvite = ({ isOpen, setIsOpenModalInvite, statistics }) => {
             ))}
           </div>
           <div className="d_ep_statistics">
-            <div className="d_ep_time_line">
-              {statisticsTimes.map((time) => (
-                <div className="d_ep_time_line_time" key={time}>
-                  {time}
-                  <span />
-                </div>
-              ))}
-            </div>
             <Preloader>
+              <div className="d_ep_time_line">
+                {statisticsTimes.map((time) => (
+                  <div className="d_ep_time_line_time" key={time}>
+                    {statistics.result.start === time || statistics.result.stop === time ? (
+                      <div style={{ color: "#DB253A" }}>
+                        {time}
+                        <span className="d_ep_time_line_time_active" />
+                      </div>
+                    ) : (
+                      <Fragment>
+                        {time}
+                        <span />
+                      </Fragment>
+                    )}
+                  </div>
+                ))}
+              </div>
               {statistics.users.map((item) => (
                 <div className="d_ep_statistic_item" key={item.name}>
                   {getStartLine(item).map((item) => item)}

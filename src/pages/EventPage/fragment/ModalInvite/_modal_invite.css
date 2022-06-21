@@ -93,7 +93,7 @@
 }
 
 .d_ep_statistics {
-    width: 100%;
+    width: 904px;
 }
 
 .d_ep_time_line {
@@ -131,6 +131,24 @@
     right: 15px;
 }
 
+.d_ep_time_line_time_active {
+    background-color: #DB253A !important;
+    height: 380px !important;
+    bottom: -369px !important;
+}
+
+.d_ep_time_line_time_active:before {
+    content: '';
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    background-color: #DB253A;
+    width: 7px;
+    height: 7px;
+    display: block;
+    margin-left: -3.6px;
+    margin-top: 6px;
+}
+
 .d_ep_statistic_item {
     border: 0.8px solid #E9E9E9;
     border-radius: 6px;
@@ -139,6 +157,12 @@
     overflow: hidden;
     display: flex;
     margin: 0 auto 8px;
+}
+
+.d_ep_statistic_item_line {
+    background-color: #DB253A;
+    width: 2px;
+    height: 400px;
 }
 
 .d_ep_statistic_item .d_ep_statistic_item_grey {

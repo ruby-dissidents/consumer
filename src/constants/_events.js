@@ -1,3 +1,5 @@
+import { usersEvent0, usersEvent1, usersEvent2 } from "./_users"
+
 export const eventsMd = [
   {
     link: "/event-page/0",
@@ -76,7 +78,7 @@ export const eventMdSW = [
         number: 6,
       },
       {
-        title: "Можно \n 23 июн, чт 19:00-22:00",
+        title: "Можно \n 23 июн, чт 19:00-23:00",
         users: usersSlice.splice(0, 1),
         number: 1,
       },
@@ -89,15 +91,15 @@ export const eventMdSW = [
     statisticsEvent: [
       {
         fullDate: "22 июня, понедельник",
-        users: users,
+        users: usersEvent0,
       },
       {
         fullDate: "23 июня, понедельник",
-        users: users,
+        users: usersEvent1,
       },
       {
         fullDate: "24 июня, понедельник",
-        users: users,
+        users: usersEvent2,
       },
     ],
     statistics: [
@@ -117,6 +119,5 @@ export const eventMdSW = [
         level: "80%",
       },
     ],
-    participants: users,
   },
 ]

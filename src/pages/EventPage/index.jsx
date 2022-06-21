@@ -33,7 +33,10 @@ const EventPage = () => {
           ))}
         </div>
         <Statistics statistics={event.statistics} />
-        <ButtonEvent setIsOpenModalUsers={() => setIsOpenModalUsers((prevState) => !prevState)} />
+        <ButtonEvent
+          setIsOpenModalUsers={() => setIsOpenModalUsers((prevState) => !prevState)}
+          numberUsers={eventStatisticsEvent.users.length}
+        />
       </div>
       <ModalInvite
         isOpen={isOpenModalInvite}
@@ -43,7 +46,7 @@ const EventPage = () => {
       <ModalUser
         isOpen={isOpenModalUsers}
         setIsOpenModalUsers={() => setIsOpenModalUsers((prevState) => !prevState)}
-        participants={event.participants}
+        participants={eventStatisticsEvent.users}
       />
     </Fragment>
   )

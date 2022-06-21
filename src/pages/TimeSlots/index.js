@@ -6,8 +6,8 @@ import "./_time_slots.css"
 
 const TimeSlots = () => (
   <div className="d_ts_wrapper_time_slots">
-    {timeSlots.map(({ date, title, timeSlotsList }) => (
-      <TimeSlot date={date} title={title} timeSlotsList={timeSlotsList} key={date} />
+    {timeSlots.map(({ date, title, timeSlotsList }, index) => (
+      <TimeSlot date={date} title={title} timeSlotsList={timeSlotsList} key={date} id={index} />
     ))}
   </div>
 )

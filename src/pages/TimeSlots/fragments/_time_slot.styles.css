@@ -5,6 +5,12 @@
   height: calc(100% - 20px);
   padding: 8px 24px;
   margin-right: 12px;
+  cursor: pointer;
+}
+
+.d_ts_time_slots_active {
+  width: 640px;
+  cursor: auto;
 }
 
 .d_ts_time_slots_title {
@@ -39,5 +45,32 @@
   line-height: 24px;
   color: #040404;
   padding: 24px 0;
+}
+
+.d_ts_time_slots_active .d_ts_time_slots_list_item {
+  text-align: left;
+}
+
+.d_ts_time_slots .range {
+  display: none;
+}
+
+.d_ts_time_slots .range .d_ts_button {
+  border-radius: 100px;
+  background: #040404;
+  width: 100%;
+  height: 54px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-top: 22px;
+}
+
+.d_ts_time_slots_active .range {
+  display: block;
 }
 

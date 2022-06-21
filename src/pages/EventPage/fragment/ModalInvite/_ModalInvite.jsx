@@ -2,8 +2,8 @@ import React from "react"
 
 import IconClose from "../../../../assets/images/icon-close.svg"
 import { statisticsItemTimes, statisticsTimes } from "./_constants"
-import "./_modal_invite.css"
 import { userList } from "../../../../constants"
+import "./_modal_invite.css"
 
 export const ModalInvite = ({ isOpen, setIsOpenModalInvite }) => {
   if (!isOpen) return null

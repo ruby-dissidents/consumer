@@ -25,9 +25,9 @@ export const StatisticsCard = ({ statistics, users }) => (
       </div>
     </div>
     <div className="d_map_statistics_list">
-      {statistics.map(({ fullData, users, level }, index) => (
+      {statistics.map(({ fullDat, users, level }, index) => (
         <div className="d_map_statistics_list_item" style={{ width: `calc(${level} - 7%)` }} key={level}>
-          <div className="d_map_statistics_list_item_title">{fullData}</div>
+          <div className="d_map_statistics_list_item_title">{fullDat}</div>
           <div className="d_map_statistics_list_item_friends">{index <= 2 ? users - 1 : users} друзей</div>
         </div>
       ))}

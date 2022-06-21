@@ -18,3 +18,7 @@ export function getRandomColor() {
     backgroundColor: randomColor,
   }
 }
+
+export function getContent(func) {
+  setTimeout(() => func((prevState) => !prevState), Math.floor(Math.random() * 10000))
+}

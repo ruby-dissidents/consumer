@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom"
 import { eventMdSW } from "../../constants"
 import { ButtonEvent, CardEvent, ModalInvite, ModalUser, Statistics } from "./fragment"
 import "./_event_page.styles.css"
+import { Preloader } from "../../components"
 
 const EventPage = () => {
   const { id: paramsId } = useParams()
@@ -14,41 +15,43 @@ const EventPage = () => {
   const eventStatisticsEvent = event.statisticsEvent[numberStatistic]
 
   return (
-    <Fragment>
-      <div className="d_ev_container">
-        <div className="d_ev_title">{event.title}</div>
-        <div className="d_ce_stack">
-          {event.events.map(({ title, active, number, users }, index) => (
-            <CardEvent
-              title={title}
-              setIsOpenModalInvite={() => {
-                setNumberStatistic(index)
-                setIsOpenModalInvite((prevState) => !prevState)
-              }}
-              active={active}
-              number={number}
-              users={users}
-              key={title}
-            />
-          ))}
+    <Preloader>
+      <Fragment>
+        <div className="d_ev_container">
+          <div className="d_ev_title">{event.title}</div>
+          <div className="d_ce_stack">
+            {event.events.map(({ title, active, number, users }, index) => (
+              <CardEvent
+                title={title}
+                setIsOpenModalInvite={() => {
+                  setNumberStatistic(index)
+                  setIsOpenModalInvite((prevState) => !prevState)
+                }}
+                active={active}
+                number={number}
+                users={users}
+                key={title}
+              />
+            ))}
+          </div>
+          <Statistics statistics={event.statistics} />
+          <ButtonEvent
+            setIsOpenModalUsers={() => setIsOpenModalUsers((prevState) => !prevState)}
+            numberUsers={eventStatisticsEvent.users.length}
+          />
         </div>
-        <Statistics statistics={event.statistics} />
-        <ButtonEvent
-          setIsOpenModalUsers={() => setIsOpenModalUsers((prevState) => !prevState)}
-          numberUsers={eventStatisticsEvent.users.length}
+        <ModalInvite
+          isOpen={isOpenModalInvite}
+          setIsOpenModalInvite={() => setIsOpenModalInvite((prevState) => !prevState)}
+          statistics={eventStatisticsEvent}
         />
-      </div>
-      <ModalInvite
-        isOpen={isOpenModalInvite}
-        setIsOpenModalInvite={() => setIsOpenModalInvite((prevState) => !prevState)}
-        statistics={eventStatisticsEvent}
-      />
-      <ModalUser
-        isOpen={isOpenModalUsers}
-        setIsOpenModalUsers={() => setIsOpenModalUsers((prevState) => !prevState)}
-        participants={eventStatisticsEvent.users}
-      />
-    </Fragment>
+        <ModalUser
+          isOpen={isOpenModalUsers}
+          setIsOpenModalUsers={() => setIsOpenModalUsers((prevState) => !prevState)}
+          participants={eventStatisticsEvent.users}
+        />
+      </Fragment>
+    </Preloader>
   )
 }
 

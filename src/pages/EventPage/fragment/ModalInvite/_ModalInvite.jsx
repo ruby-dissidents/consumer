@@ -1,9 +1,10 @@
-import React, { useEffect } from "react"
+import React from "react"
 
 import IconClose from "../../../../assets/images/icon-close.svg"
 import { statisticsTimes } from "./_constants"
 import "./_modal_invite.css"
 import { getRandomColor } from "../../../../constants"
+import { Preloader } from "../../../../components"
 
 export const ModalInvite = ({ isOpen, setIsOpenModalInvite, statistics }) => {
   function getStartLine({ timeLine }) {
@@ -56,12 +57,14 @@ export const ModalInvite = ({ isOpen, setIsOpenModalInvite, statistics }) => {
                 </div>
               ))}
             </div>
-            {statistics.users.map((item) => (
-              <div className="d_ep_statistic_item" key={item.name}>
-                {getStartLine(item).map((item) => item)}
-                {getEndLine(item).map((item) => item)}
-              </div>
-            ))}
+            <Preloader>
+              {statistics.users.map((item) => (
+                <div className="d_ep_statistic_item" key={item.name}>
+                  {getStartLine(item).map((item) => item)}
+                  {getEndLine(item).map((item) => item)}
+                </div>
+              ))}
+            </Preloader>
           </div>
         </div>
       </div>

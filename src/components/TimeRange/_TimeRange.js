@@ -62,51 +62,16 @@ export const TimeRange = () => {
           renderThumb={({ props, isDragged }) => (
             <div
               {...props}
-              style={{
-                ...props.style,
-                height: "24px",
-                width: "24px",
-                outline: "transparent",
-                borderRadius: "50px",
-                backgroundColor: "#040404",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                marginTop: "57px",
-                left: "-12px",
-              }}
+              className="d_tr_container_ruler_line_dot"
+              style={
+                {
+                  // ...props.style
+                }
+              }
             >
-              <div
-                style={{
-                  width: "1px",
-                  height: "6px",
-                  borderWidth: 0,
-                  backgroundColor: "#CDCDCD",
-                  marginRight: "4px",
-                  boxShadow: "none",
-                }}
-              />
-              <div
-                style={{
-                  width: "1px",
-                  height: "6px",
-                  borderWidth: 0,
-                  backgroundColor: "#CDCDCD",
-                  boxShadow: "none",
-                }}
-              />
-              <span
-                style={{
-                  display: "block",
-                  background: "#040404",
-                  width: "2px",
-                  height: "65px",
-                  opacity: 0.5,
-                  position: "absolute",
-                  left: "11px",
-                  top: "-42px",
-                }}
-              />
+              <span className="d_tr_container_ruler_line_dot_span" />
+              <div className="d_tr_container_ruler_line_dot_stripe" />
+              <div className="d_tr_container_ruler_line_dot_stripe" />
             </div>
           )}
         />

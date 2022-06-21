@@ -59,6 +59,45 @@
     height: 52px;
 }
 
+.d_tr_container_ruler_line_dot {
+    height: 24px;
+    width: 24px;
+    outline: transparent;
+    border-radius: 50px;
+    background-color: #040404;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 33px;
+    left: -12px;
+}
+
+.d_tr_container_ruler_line_dot_stripe {
+    border-width: 0;
+    background-color: #CDCDCD;
+    width: 1px;
+    height: 6px;
+    box-shadow: none;
+    margin-right: 4px;
+}
+
+.d_tr_container_ruler_line_dot_stripe:last-child {
+    margin-right: 0;
+}
+
+.d_tr_container_ruler_line_dot_span {
+    display: block;
+    background: #040404;
+    width: 2px;
+    height: 65px;
+    opacity: 0.5;
+    z-index: -1;
+    position: absolute;
+    left: 11px;
+    top: -42px;
+}
+
 .d_tr_container_ruler_line div:first-child {
     margin-top: 0 !important;
     left: 12px !important;

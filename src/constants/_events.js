@@ -104,7 +104,7 @@ export const eventMdSW = [
         number: 1,
       },
       {
-        title: "Можно \n 24 июн, пт 20:00-21:00",
+        title: "Можно \n 24 июн, пт 20:00-23:00",
         users: usersSlice.splice(0, 2),
         number: 2,
       },
@@ -131,7 +131,7 @@ export const eventMdSW = [
         users: usersEvent2,
         result: {
           start: "20:00",
-          stop: "21:00",
+          stop: "23:00",
         },
       },
     ],

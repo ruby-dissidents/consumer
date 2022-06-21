@@ -141,7 +141,7 @@ export const eventMdSW = [
 
 export const marking = {
   eventName: "Марафон по star wars",
-  org: "Юра Крышнов",
+  org: "Макаров Фёдор",
   users: users,
   statistics: [...statistics],
   timeSlots: [

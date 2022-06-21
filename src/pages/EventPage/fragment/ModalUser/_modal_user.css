@@ -6,6 +6,7 @@
     align-items: baseline;
     justify-content: center;
     padding-top: 90px;
+    z-index: 1001;
     position: absolute;
     bottom: 0;
     right: 0;

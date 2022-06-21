@@ -11,6 +11,6 @@ export const statistics = [
   {
     date: "13, воскресенье",
     numberOfFriends: "9",
-    width: 60,
+    width: 63,
   },
 ]

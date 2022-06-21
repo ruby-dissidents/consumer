@@ -11,8 +11,19 @@
   padding: 100px 32px 32px;
 }
 
+.d_map_marking_card_author_img {
+  border-radius: 100px;
+  background-color: #9ACF30;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-right: 12px;
+}
+
 .d_map_marking_card_author {
-  width: 450px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;

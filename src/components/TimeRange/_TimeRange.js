@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Range, getTrackBackground } from "react-range"
 
 import "./_time_range.styles.css"
-import { timeArray } from "./_constants"
+import { timeArray, timeValues } from "./_constants"
 
 export const TimeRange = () => {
   const STEP = 1
@@ -10,10 +10,14 @@ export const TimeRange = () => {
   const MAX = 19
   const [values, setValues] = useState([1, 19])
 
+  function getTimeValues(props) {
+    return timeValues[props - 1]
+  }
+
   return (
     <div className="d_tr_container">
       <div className="d_tr_container_title">
-        По времени могу: <span children={`${values[0]} – ${values[1]}`} />
+        По времени могу: <span children={`${getTimeValues(values[0])} – ${getTimeValues(values[1])}`} />
       </div>
       <div className="d_tr_container_ruler">
         {timeArray.map((time, index) => (

@@ -2,6 +2,7 @@ import React from "react"
 
 import IconClose from "../../../../assets/images/icon-close.svg"
 import "./_modal_user.css"
+import { getRandomColor } from "../../../../constants"
 
 export const ModalUser = ({ isOpen, setIsOpenModalUsers, participants }) => {
   if (!isOpen) return null
@@ -18,7 +19,7 @@ export const ModalUser = ({ isOpen, setIsOpenModalUsers, participants }) => {
         <div className="d_ep_invite_user_lists">
           {participants.map(({ name }) => (
             <div className="d_ep_invite_user" key={name}>
-              <div className="d_ep_invite_user_avatar" children={name[0]} />
+              <div className="d_ep_invite_user_avatar" style={getRandomColor()} children={name[0]} />
               <div className="d_ep_invite_user_text" children={name} />
             </div>
           ))}

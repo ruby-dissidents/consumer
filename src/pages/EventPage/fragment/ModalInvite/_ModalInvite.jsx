@@ -3,6 +3,7 @@ import React, { useEffect } from "react"
 import IconClose from "../../../../assets/images/icon-close.svg"
 import { statisticsTimes } from "./_constants"
 import "./_modal_invite.css"
+import { getRandomColor } from "../../../../constants"
 
 export const ModalInvite = ({ isOpen, setIsOpenModalInvite, statistics }) => {
   function getStartLine({ timeLine }) {
@@ -41,7 +42,7 @@ export const ModalInvite = ({ isOpen, setIsOpenModalInvite, statistics }) => {
             <div className="d_ep_users_title">Участники</div>
             {statistics.users.map(({ name }) => (
               <div className="d_ep_user" key={name}>
-                <div className="d_ep_user_avatar" children={name[0]} />
+                <div className="d_ep_user_avatar" style={getRandomColor()} children={name[0]} />
                 {name}
               </div>
             ))}

@@ -2,29 +2,33 @@ import React from "react"
 
 import IconUser from "../../assets/images/icon-users.svg"
 import "./_statistics_card.styles.css"
+import { getRandomColor } from "../../constants"
 
-export const StatisticsCard = ({ statistics }) => (
+export const StatisticsCard = ({ statistics, users }) => (
   <div className="d_map_statistics">
     <div className="d_map_statistics_title">Кто идет</div>
     <div className="d_map_users">
       <div className="d_map_number_users">
         <img src={IconUser} alt="icon user" width="18" height="18" />
-        14
+        {users.length - 1}
       </div>
       <div className="d_ce_scroll">
-        <div className="d_ce_participant">
-          <div className="d_ce_participant_avatar">Ф</div>
-          <div className="d_ce_participant_title">
-            Федор <br /> Достоевский
-          </div>
-        </div>
+        {users.map(
+          (item, index) =>
+            index !== 0 && (
+              <div className="d_ce_participant">
+                <div className="d_ce_participant_avatar" style={getRandomColor()} children="Ф" />
+                <div className="d_ce_participant_title">{item.name}</div>
+              </div>
+            )
+        )}
       </div>
     </div>
     <div className="d_map_statistics_list">
-      {statistics.map(({ date, numberOfFriends, width }) => (
-        <div className="d_map_statistics_list_item" style={{ width: `${width}%` }} key={numberOfFriends}>
-          <div className="d_map_statistics_list_item_title">{date}</div>
-          <div className="d_map_statistics_list_item_friends">{numberOfFriends} друзей</div>
+      {statistics.map(({ fullData, users, level }, index) => (
+        <div className="d_map_statistics_list_item" style={{ width: `calc(${level} - 7%)` }} key={level}>
+          <div className="d_map_statistics_list_item_title">{fullData}</div>
+          <div className="d_map_statistics_list_item_friends">{index <= 2 ? users - 1 : users} друзей</div>
         </div>
       ))}
     </div>

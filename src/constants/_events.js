@@ -4,19 +4,19 @@ export const eventsMd = [
   {
     link: "/event-page/0",
     title: "Марафон \n по star wars",
-    data: "июнь: 21, 6-6, 6; июнь: 22, 23, 24",
+    data: "июнь: 22, 23, 24",
     color: "#FF6F42",
   },
   {
     link: "/event-page/1",
     title: "Согласование отчетности ЭЕС-715",
-    data: "июнь: 1, 1-6, 7; июнь: 5, 6",
+    data: "июнь: 5, 6",
     color: "#2B2B2B",
   },
   {
     link: "/event-page/2",
     title: "Летний выезд на природу",
-    data: "июнь: 6, 1-6, 7; июнь: 10, 12",
+    data: "июнь: 10, 12",
     color: "#836AC6",
   },
 ]
@@ -68,6 +68,27 @@ export const users = [
 
 const usersSlice = [...users]
 
+const statistics = [
+  {
+    date: "22 июн, ср",
+    fullDat: "22, среда",
+    users: 6,
+    level: "100%",
+  },
+  {
+    date: "23 июн, чт",
+    fullDat: "23, четверг",
+    users: 5,
+    level: "90%",
+  },
+  {
+    date: "24 июн, пт",
+    fullDat: "24, четверг",
+    users: 4,
+    level: "80%",
+  },
+]
+
 export const eventMdSW = [
   {
     title: "Марафон по star wars",
@@ -102,22 +123,13 @@ export const eventMdSW = [
         users: usersEvent2,
       },
     ],
-    statistics: [
-      {
-        date: "22 июн, ср",
-        users: 6,
-        level: "100%",
-      },
-      {
-        date: "23 июн, чт",
-        users: 5,
-        level: "90%",
-      },
-      {
-        date: "24 июн, пт",
-        users: 4,
-        level: "80%",
-      },
-    ],
+    statistics: [...statistics],
   },
 ]
+
+export const marking = {
+  eventName: "Марафон по star wars",
+  org: "Юра Крышнов",
+  users: users,
+  statistics: [...statistics],
+}

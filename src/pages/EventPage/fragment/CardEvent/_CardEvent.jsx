@@ -1,6 +1,7 @@
 import React from "react"
 
 import "./_card_event.styles.css"
+import { getRandomColor } from "../../../../constants"
 
 export const CardEvent = ({ title, active = false, setIsOpenModalInvite, number, users }) => {
   const classNameParticipants = active ? "d_ce free" : "d_ce"
@@ -18,7 +19,7 @@ export const CardEvent = ({ title, active = false, setIsOpenModalInvite, number,
             <div className="d_ce_scroll">
               {users.map(({ name }) => (
                 <div className="d_ce_participant" key={name}>
-                  <div className="d_ce_participant_avatar">{name[0]}</div>
+                  <div className="d_ce_participant_avatar" style={getRandomColor()} children={name[0]} />
                   <div className="d_ce_participant_title">{name}</div>
                 </div>
               ))}

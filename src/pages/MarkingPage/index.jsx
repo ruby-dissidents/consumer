@@ -2,20 +2,20 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 import { MarkingCard, StatisticsCard } from "../../components"
-import { statistics } from "./_constants"
+import { marking } from "../../constants"
 import "./_marking_page.css"
 
 const MarkingPage = () => (
   <div className="d_container d_mp_container">
     <MarkingCard
-      author="Катя Зырянова"
-      title="«Марафон Гарри Поттера»"
-      description="Катя Зырянова приглашает тебя на встречу «Марафон Гарри Поттера»"
+      author={marking.org}
+      title={marking.eventName}
+      description={`${marking.org} приглашает тебя на встречу «${marking.eventName}»`}
       color="#FF6F42"
     >
       <Link to="/time-slots" className="d_map_marking_card_link" children="Отметиться" />
     </MarkingCard>
-    <StatisticsCard statistics={statistics} />
+    <StatisticsCard statistics={marking.statistics} users={marking.users} />
   </div>
 )
 

@@ -2,6 +2,7 @@ import React, { Fragment, useState } from "react"
 import { Link } from "react-router-dom"
 
 import IconClose from "../../../assets/images/icon-close.svg"
+import { marking } from "../../../constants"
 
 export const EventNavBar = () => {
   const [isOpenModal, setIsOpenModal] = useState(false)
@@ -9,7 +10,7 @@ export const EventNavBar = () => {
   return (
     <div className="d_pw_navbar">
       <div style={{ display: "flex", flexDirection: "column" }}>
-        <div className="d_pw_navbar_title">«Марафон Гарри Поттера»</div>
+        <div className="d_pw_navbar_title">{marking.eventName}</div>
         <div className="d_pw_navbar_description">Укажи день и время когда тебе будет удобно</div>
       </div>
       <button className="d_pw_navbar_link" onClick={() => setIsOpenModal((prevState) => !prevState)} children="Далее" />

@@ -111,15 +111,15 @@ export const eventMdSW = [
     ],
     statisticsEvent: [
       {
-        fullDate: "22 июня, понедельник",
+        fullDate: "22 июня, среда",
         users: usersEvent0,
       },
       {
-        fullDate: "23 июня, понедельник",
+        fullDate: "23 июня, четверг",
         users: usersEvent1,
       },
       {
-        fullDate: "24 июня, понедельник",
+        fullDate: "24 июня, пятница",
         users: usersEvent2,
       },
     ],
@@ -132,4 +132,19 @@ export const marking = {
   org: "Юра Крышнов",
   users: users,
   statistics: [...statistics],
+  timeSlots: [
+    {
+      title: "Ср",
+      date: "22",
+      // timeSlotsList: ["09:00 – 15:00", "17:30 – 18:30", "20:00 – 00:00"],
+    },
+    {
+      title: "Чт",
+      date: "23",
+    },
+    {
+      title: "Пт",
+      date: "24",
+    },
+  ],
 }

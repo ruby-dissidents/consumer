@@ -17,7 +17,7 @@ const EventPage = () => {
     <Fragment>
       <div className="d_ev_container">
         <div className="d_ev_title">{event.title}</div>
-        <div className="stack">
+        <div className="d_ce_stack">
           {event.events.map(({ title, active, number, users }, index) => (
             <CardEvent
               title={title}

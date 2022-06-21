@@ -16,7 +16,7 @@ export const StatisticsCard = ({ statistics, users }) => (
         {users.map(
           (item, index) =>
             index !== 0 && (
-              <div className="d_ce_participant">
+              <div className="d_ce_participant" key={item.name}>
                 <div className="d_ce_participant_avatar" style={getRandomColor()} children="Ф" />
                 <div className="d_ce_participant_title">{item.name}</div>
               </div>

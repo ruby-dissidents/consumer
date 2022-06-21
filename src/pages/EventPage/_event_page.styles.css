@@ -14,3 +14,7 @@
     line-height: 43px;
     margin-bottom: 30px;
 }
+
+.d_ce_stack {
+    display: flex;
+}

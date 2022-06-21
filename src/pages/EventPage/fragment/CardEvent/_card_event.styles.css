@@ -48,7 +48,7 @@
 }
 
 .d_ce_scroll {
-    width: 1000px;
+    /*width: 1000px;*/
     display: flex;
     overflow: hidden;
 }

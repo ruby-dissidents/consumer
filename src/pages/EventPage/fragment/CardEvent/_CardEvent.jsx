@@ -2,10 +2,10 @@ import React from "react"
 
 import "./_card_event.styles.css"
 
-export const CardEvent = ({ title, active = false, setIsOpenModalInvite }) => {
+export const CardEvent = ({ title, active = false, setIsOpenModalInvite, number, users }) => {
   const classNameParticipants = active ? "d_ce free" : "d_ce"
   const messageProposal = active
-    ? "Этот слот свободен у всех 14 участников. Мы все проверили!"
+    ? `Этот слот свободен у всех ${number} участников. Мы все проверили!`
     : "Напиши им: возможно, они смогут перенести дела и подстроиться"
 
   return (
@@ -14,14 +14,14 @@ export const CardEvent = ({ title, active = false, setIsOpenModalInvite }) => {
       <div>
         {!active && (
           <div className="d_ce_participants">
-            <div className="d_ce_participants_title">Но без 1 участника:</div>
+            <div className="d_ce_participants_title">Но без {number} участника:</div>
             <div className="d_ce_scroll">
-              <div className="d_ce_participant">
-                <div className="d_ce_participant_avatar">Ф</div>
-                <div className="d_ce_participant_title">
-                  Федор <br /> Достоевский
+              {users.map(({ name }) => (
+                <div className="d_ce_participant" key={name}>
+                  <div className="d_ce_participant_avatar">{name[0]}</div>
+                  <div className="d_ce_participant_title">{name}</div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         )}

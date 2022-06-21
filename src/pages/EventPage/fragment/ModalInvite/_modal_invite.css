@@ -92,10 +92,6 @@
     margin-right: 40px;
 }
 
-.d_ep_user:last-child {
-    margin-bottom: 0;
-}
-
 .d_ep_statistics {
     width: 100%;
 }
@@ -145,8 +141,15 @@
     margin: 0 auto 8px;
 }
 
-.d_ep_statistic_item span {
+.d_ep_statistic_item .d_ep_statistic_item_grey {
     background-color: #E9E9E9;
+    width: 30px;
+    height: 100%;
+    display: block;
+}
+
+.d_ep_statistic_item .d_ep_statistic_item_white {
+    background-color: #fff;
     width: 30px;
     height: 100%;
     display: block;

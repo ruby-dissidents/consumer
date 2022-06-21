@@ -1,10 +1,9 @@
 import React from "react"
 
 import IconClose from "../../../../assets/images/icon-close.svg"
-import { userList } from "../../../../constants"
 import "./_modal_user.css"
 
-export const ModalUser = ({ isOpen, setIsOpenModalUsers }) => {
+export const ModalUser = ({ isOpen, setIsOpenModalUsers, participants }) => {
   if (!isOpen) return null
 
   return (
@@ -17,10 +16,10 @@ export const ModalUser = ({ isOpen, setIsOpenModalUsers }) => {
           </button>
         </div>
         <div className="d_ep_invite_user_lists">
-          {userList.map((user) => (
-            <div className="d_ep_invite_user" key={user}>
-              <div className="d_ep_invite_user_avatar" />
-              <div className="d_ep_invite_user_text">{user}</div>
+          {participants.map(({ name }) => (
+            <div className="d_ep_invite_user" key={name}>
+              <div className="d_ep_invite_user_avatar" children={name[0]} />
+              <div className="d_ep_invite_user_text" children={name} />
             </div>
           ))}
         </div>
